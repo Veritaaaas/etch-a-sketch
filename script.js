@@ -1,3 +1,6 @@
+let pastel = ["#FAEDCB", "#C9E4DE", "#C6DEF1", "#DBCDF0", "#F2C6DE", "#F7D9C4"]
+
+
 //creates the sketchpad
 function createSketchpad(row = 16, col = 16)
 {
@@ -28,7 +31,7 @@ function changeColor()
     {
         cells[i].addEventListener('mouseover', function(e)
         {
-            e.target.style.backgroundColor = 'black';
+            e.target.style.backgroundColor = pastel[Math.floor(Math.random() * pastel.length)];
         });
     }
 }

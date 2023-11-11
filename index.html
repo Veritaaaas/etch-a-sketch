@@ -8,13 +8,23 @@
 </head>
 <body>
     <div class="controls">
-        <button class="clear">Clear</button>
-        <button class="size" value="8">8x8</button>
-        <button class="size" value="16">16x16</button>
-        <button class="size" value="32">32x32</button>
-        <button class="size" value="64">64x64</button>
+        <div class="color-picker" id="color-picker-left">
+            <button class="clear">Clear</button>
+            <button class="pastel" value="pastel">Pastel</button>
+        </div>
+        <div class="size-picker">
+            <button class="size" value="8">8x8</button>
+            <button class="size" value="16">16x16</button>
+            <button class="size" value="32">32x32</button>
+            <button class="size" value="64">64x64</button>
+        </div>
+        <div class="color-picker" id="color-picker-right">
+            <button class="warm" value="warm">Warm</button>
+            <button class="cold" value="cold">Cold</button>
+        </div>
     </div>
-    
+        
+
     <div class="sketchpad"></div>
 
     <script src="script.js"></script>

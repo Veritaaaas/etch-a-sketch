@@ -9,7 +9,13 @@ body {
 h1 {
     font-family: 'Permanent Marker', cursive;
     font-size: 50px;
-    margin: 10px;
+    margin-top: 5px;
+}
+
+p {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 20px;
+    margin-top: 0px;
 
 }
 

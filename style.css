@@ -3,12 +3,19 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-image: linear-gradient(to right, #D3F8FF, #FFE6E6);
+}
+
+h1 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 50px;
+    margin: 10px;
+
 }
 
 .controls {
     display: flex;
     flex-direction: row;
-    margin-top: 50px;
 }
 
 .color-picker {
@@ -16,18 +23,38 @@ body {
     flex-direction: column;
 }
 
+.clear, .color {
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    border-radius: 50%;
+    font-weight: 700;
+    background-color: white;
+    border: 3px solid black;
+    cursor: pointer;
+}
+
 .size-picker {
+    width: 400px;
     display: flex;
     flex-wrap: wrap;
+    
 }
 
 .size {
-    width: 50%;
-    height: 25px;
+    margin: 10px;
+    width: calc(50% - 20px);
+    height: 50px;
+    border-radius: 25px;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: white;
+    border: 3px solid black;
+    cursor: pointer;
 }
 
 .sketchpad {
-    margin-top: 30px;
+    margin-top: 10px;
     display: grid;
     grid-template-columns: repeat(16, 1fr);
     grid-template-rows: repeat(16, 1fr);

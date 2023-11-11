@@ -56,20 +56,31 @@ const clearButton = document.querySelector('.clear');
 const colorButton = document.querySelectorAll('.color');
 const sizeButton = document.querySelectorAll('.size');
 
+colorButton[0].style.backgroundColor = "#FAEDCB";
+sizeButton[1].style.backgroundColor = "#FAEDCB";
+
 for (let i = 0; i < colorButton.length; i++)
 {
     colorButton[i].addEventListener('click', function() 
     {
+        for (let j = 0; j < colorButton.length; j++)
+        {
+            colorButton[j].style.backgroundColor = "white";
+        }
+
         if (colorButton[i].value === "pastel")
         {
+            colorButton[i].style.backgroundColor = "#FAEDCB";
             currentArray = pastel;
         }
         else if (colorButton[i].value === "warm")
         {
+            colorButton[i].style.backgroundColor = "#FAEDCB";
             currentArray = warm;
         }
         else if (colorButton[i].value === "cold")
         {
+            colorButton[i].style.backgroundColor = "#FAEDCB";
             currentArray = cold;
         }
     });
@@ -81,6 +92,14 @@ for (let i = 0; i < sizeButton.length; i++)
     {
         let size = parseInt(sizeButton[i].value);
         createSketchpad(size, size);
+
+        for (let j = 0; j < sizeButton.length; j++)
+        {
+            sizeButton[j].style.backgroundColor = "white";
+        }
+
+        sizeButton[i].style.backgroundColor = "#FAEDCB";
+
     });
 }
 

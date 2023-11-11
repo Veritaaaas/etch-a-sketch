@@ -15,4 +15,17 @@ function createSketchpad()
     }
 }
 
+function changeColor()
+{
+    const cells = document.querySelectorAll('.cell');
+    for (let i = 0; i < cells.length; i++)
+    {
+        cells[i].addEventListener('mouseover', function(e)
+        {
+            e.target.style.backgroundColor = 'black';
+        });
+    }
+}
+
 window.onload = createSketchpad;
+let intervalId = setInterval(changeColor, 1000);
